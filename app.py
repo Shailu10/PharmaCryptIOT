@@ -4,7 +4,7 @@ import json
 import urllib.request
 
 app=Flask(__name__)
-#app.config.from_object(Config)
+app.config.from_object(Config)
 
 
 @app.route('/', methods=['GET,','POST'])
