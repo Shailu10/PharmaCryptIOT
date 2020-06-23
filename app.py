@@ -7,7 +7,7 @@ app=Flask(__name__)
 #app.config.from_object(Config)
 
 
-@app.route('/')
+@app.route('/', methods=['GET,','POST'])
 def welcome():
     return render_template('welcome.html')
 
